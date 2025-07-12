@@ -3,18 +3,18 @@ Built on top of **FLAN-T5**, the model has been adapted using **LoRA (Low-Rank A
 
 ---
 
-## 🚀 Features
+## Features
 
-- 🎯 **Instruction-following**: Tailored to respond only to book-related queries.
-- 🧠 **LoRA Fine-Tuning**: Lightweight adapter-based tuning for faster training and inference.
-- 🔒 **Output Control**: Custom prompt templates + banned word filters prevent off-topic or toxic responses.
-- ⚡ **Optimized for Free-tier**: Works on CPU-only runtimes (no GPU/fp16 needed).
+- **Instruction-following**: Tailored to respond only to book-related queries.
+- **LoRA Fine-Tuning**: Lightweight adapter-based tuning for faster training and inference.
+- **Output Control**: Custom prompt templates + banned word filters prevent off-topic or toxic responses.
+- **Optimized for Free-tier**: Works on CPU-only runtimes (no GPU/fp16 needed).
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠Tech Stack
 
-- `FLAN-T5` base model via Hugging Face 🤗
+- `FLAN-T5` base model via Hugging Face 
 - `PEFT` for LoRA adapter training
 - `Seq2SeqTrainer` for supervised fine-tuning
 - Custom dataset of book queries and recommendations
@@ -22,7 +22,7 @@ Built on top of **FLAN-T5**, the model has been adapted using **LoRA (Low-Rank A
 
 ---
 
-## 🧪 Example Prompts
+## Example Prompts
 
 | Prompt | Output |
 |--------|--------|
@@ -31,9 +31,9 @@ Built on top of **FLAN-T5**, the model has been adapted using **LoRA (Low-Rank A
 
 ---
 
-## 📁 Structure
+## Structure
 
-📦bookbuddy
+bookbuddy
 ├── data/
 │ └── train.json
 ├── training/
@@ -50,7 +50,7 @@ Edit
 
 ---
 
-## ✅ How to Use
+## How to Use
 
 1. Install dependencies:  
    `pip install -r requirements.txt`
@@ -60,7 +60,7 @@ Edit
 
 ---
 
-## 💡 Use Cases
+## Use Cases
 
 - Personal book advisors for websites/apps
 - Niche genre recommendation bots
@@ -68,13 +68,13 @@ Edit
 
 ---
 
-## 📌 Limitations
+## Limitations
 
 - May hallucinate titles not in dataset if prompt is vague.
 - Designed specifically for book recommendation — off-topic prompts will be ignored or rejected by design.
 
 ---
 
-## 📜 License
+## License
 
 MIT License © 2025 Sanali Lokuge
